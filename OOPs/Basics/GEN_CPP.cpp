@@ -2,13 +2,14 @@
 using namespace std;
 
 class GEN_CPP {
-    public:
+    private:
     string college_name;
     string student_name;
     string branch;
     short sem;  //short is a data type which is used to store integers in the range of -32768 to 32767
     float cgpa;
 
+    public:
     void ScanDetails(string, string, string, short, float);
     void PrintDetails();
 };
@@ -62,3 +63,19 @@ int main() {
 
     return 0;
 }
+
+/*
+Scan 5 students details and print them in the following format:
+Table Format: 
+
+--------------------------------------------------------------------------------------------
+College Name        | Student Name  | Branch                           | Semester | CGPA
+--------------------------------------------------------------------------------------------
+IIITDM Kancheepuram | Naimish       | Computer Science and Engineering | 3        | 9.5
+IIITDM Kancheepuram | Naimish       | Computer Science and Engineering | 3        | 9.5
+IIITDM Kancheepuram | Naimish       | Computer Science and Engineering | 3        | 9.5
+IIITDM Kancheepuram | Naimish       | Computer Science and Engineering | 3        | 9.5
+IIITDM Kancheepuram | Naimish       | Computer Science and Engineering | 3        | 9.5
+--------------------------------------------------------------------------------------------
+
+*/
