@@ -3,36 +3,41 @@ using namespace std;
 
 class Human {
     public:
-    string name;
+    string name;    
     int age;
     bool gender;    //male -> 1 & female -> 0
     float height;   //in feet
     float weight;   //in kgs
 
-    void ScanDetails() {
-        cout << "Enter Name: ";
-        // cin >> name;    //this will not work for names with spaces
-        getline(cin, name); //this will work for names with spaces
-
-        cout << "Enter Age: ";
-        cin >> age;
-        cout << "Enter Gender (Press 1 for Male and 0 for Female): ";
-        cin >> gender;
-        cout << "Enter Height: ";
-        cin >> height;
-        cout << "Enter Weight: ";
-        cin >> weight;        
-    }
-
-    void printDetails() {
-        cout << "\nName: " << name << endl;
-        cout << "Age: " << age << endl;
-        cout << "Gender: " << (gender == 1)?"Male":"Female";
-        cout << endl;
-        cout << "Height: " << height << endl;
-        cout << "Weight: " << weight << endl;
-    }
+    void ScanDetails();
+    void printDetails();
 };
+
+void Human::ScanDetails() {
+    cout << "Enter Name: ";
+    // cin >> name;    //this will not work for names with spaces
+    getline(cin, name); //this will work for names with spaces
+    cout << "Enter Age: ";
+    cin >> age;
+    cout << "Enter Gender (Press 1 for Male and 0 for Female): ";
+    cin >> gender;
+    cout << "Enter Height: ";
+    cin >> height;
+    cout << "Enter Weight: ";
+    cin >> weight;
+    //to clear the input buffer
+    cin.ignore();   //this will ignore the last character in the input buffer
+}
+
+void Human::printDetails() {
+    cout << "\nName: " << name << endl;
+    cout << "Age: " << age << endl;
+    string g = (gender == 1)?"Male":"Female";
+    cout << "Gender: " << g;
+    cout << endl;
+    cout << "Height: " << height << endl;
+    cout << "Weight: " << weight << endl;
+}
 
 int main() {
     //object of class Human
@@ -57,7 +62,28 @@ int main() {
 
     Human h2, h3, h4, h5;
     h2.ScanDetails();
+    // h3.ScanDetails();
+
     h2.printDetails();
+    // h3.printDetails();
+
+    cout << "Memory occupied by h2: " << sizeof(h2) << " bytes\n";
+    cout << "Memory occupied by h2.name: " << sizeof(h2.name) << " bytes\n";
+
+    /*
+    Memory occupied by h2: 
+    int -> 4 bytes
+    bool -> 1 byte
+    float -> 4 bytes -> x2 -> 8 bytes
+    string -> 28 bytes -> by default 28 bytes are allocated to string
+    Total -> 4 + 1 + 8 + 28 = 41 bytes
+
+    sizeof() -> returns the size of the object in bytes
+    it returns 40 bytes because of padding (memory alignment)
+
+    in float if we want to set 2 decimal numbers after the decimal point
+    in cpp we use fixed and setprecision() function
+    */
 
     return 0;
 }
@@ -73,6 +99,10 @@ Attributes of Human:
     5. Weight
 
 boolean: true(1)/false(0)
+
+:: -> scope resolution operator
+> It is used to define a function outside the class definition.
+> Because class is a blueprint and we can't define a function inside a blueprint.
 
 
 */
