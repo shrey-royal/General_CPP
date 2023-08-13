@@ -1,0 +1,33 @@
+Inheritance in cpp:
+> Inheritance allows us to define a class in terms of another class, which makes it easier to create and maintain an application. This also provides an opportunity to reuse the code functionality and fast implementation time.
+
+> Advantages: 
+1. It provides reusability of a code. We don’t have to write the same code again and again. Also, it allows us to add more features to a class without modifying it.
+2. It simplifies the complex code by dividing it into smaller parts.
+3. Through inheritance, we can achieve polymorphism which is one of the important features of the Object-Oriented Programming.
+
+> Types of Inheritance:
+1. Single Inheritance: In single inheritance, a class is allowed to inherit from only one class. i.e. one sub class is inherited by one base class only.
+2. Multiple Inheritance: Multiple Inheritance is a feature of C++ where a class can inherit from more than one classes. i.e. one sub class is inherited from more than one base classes.
+3. Multilevel Inheritance: In this type of inheritance, a derived class is created from another derived class.
+4. Hierarchical Inheritance: In Hierarchical inheritance, one class serves as a superclass (base class) for more than one sub class.
+5. Hybrid Inheritance: Hybrid inheritance is a combination of multiple inheritance and hierarchical inheritance.
+
+Terminology:
+1. Base class: The class whose members are inherited is called base class, parent class or super class.
+2. Derived class: The class that inherits the members of another class is called derived class, child class or sub class.
+
+> Syntax:
+
+class derived-class: access-specifier base-class
+{
+    // body of derived class
+};
+
+> Access Specifiers: They are used to define how the members (attributes and methods) of a class can be accessed. In C++, there are three access specifiers: public, private, and protected.
+
+> 1. Public: When deriving a class from a public base class, public members of the base class become public members of the derived class and protected members of the base class become protected members of the derived class. A base class’s private members are never accessible directly from a derived class, but can be accessed through calls to the public and protected members of the base class.
+
+> 2. Protected: When deriving from a protected base class, public and protected members of the base class become protected members of the derived class.
+
+> 3. Private: When deriving from a private base class, public and protected members of the base class become private members of the derived class.
