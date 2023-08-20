@@ -76,9 +76,11 @@ class LuxuryCar : public Car {
 };
 
 int main() {
+    //SportsCar(hp, cc, topspeed)
     SportsCar s1(100, 200, 300);
     s1.display();
 
+    //LuxuryCar(hp, cc, price)
     LuxuryCar l1(400, 500, 600);
     l1.display();
 
