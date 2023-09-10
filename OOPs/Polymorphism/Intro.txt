@@ -1,0 +1,12 @@
+Polymorphism in cpp:
+
+> Polymorphism means having many forms. In C++, polymorphism means that a call to a member function will cause a different function to be executed depending on the type of object that invokes the function.
+
+TYpes of Polymorphism:
+
+1. Compile time polymorphism
+2. Run time polymorphism
+
+In compile time polymorphism, the compiler knows which function to call at compile time. It is achieved by function overloading and operator overloading.
+
+In run time polymorphism, the compiler doesn't know which function to call at compile time. It is achieved by function overriding. (virtual functions)
