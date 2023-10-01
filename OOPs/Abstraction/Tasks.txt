@@ -1,0 +1,16 @@
+Tasks:
+
+1. Bank Account Management System:
+   Design a C++ program to manage bank accounts. Implement an abstract class 'Account' with derived classes 'SavingsAccount' and 'CheckingAccount'. Use abstraction to define common methods like 'deposit', 'withdraw', and 'getBalance', which are implemented differently for each account type.
+
+2. Shape Hierarchy:
+   Create an abstract class 'Shape' with subclasses like 'Circle', 'Rectangle', and 'Triangle'. Each subclass should implement the 'calculateArea' method differently. Use abstraction to represent geometric shapes and calculate their areas.
+
+3. Employee Payroll System:
+   Build an employee payroll system in C++. Define an abstract class 'Employee' with subclasses for different types of employees (e.g., 'HourlyEmployee', 'SalariedEmployee'). Use abstraction to calculate the salary for each type of employee based on their specific criteria.
+
+4. Inventory Management System:
+   Develop an inventory management system. Create an abstract class 'Product' with subclasses like 'Electronics', 'Clothing', and 'Books'. Implement a common method for updating product information and use abstraction to represent different product categories.
+
+5. Vehicle Rental System:
+   Design a vehicle rental system using C++. Create an abstract class 'Vehicle' with derived classes for various vehicle types (e.g., 'Car', 'Bike', 'Truck'). Use abstraction to define methods for calculating rental charges and displaying vehicle details that are specific to each type of vehicle.
