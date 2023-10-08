@@ -1,0 +1,16 @@
+Exceptions in cpp:
+
+1. Unchecked Exceptions : Occurs at run time
+2. Checked Exceptions : Occurs at compile time
+3. Errors : OutOfMemoryError, StackOverflowError
+
+
+Custom Exceptions: These exceptions are made by the programmer to handle the exceptions in a better way.
+
+Terminologies:
+
+1. try : This block is used to enclose the code that might throw an exception.
+2. catch : This block is used to catch the exception thrown by the try block.
+3. finally : This block is used to execute the important code of the program.
+4. throw : This keyword is used to throw an exception.
+5. throws : This keyword is used to declare the exception.
